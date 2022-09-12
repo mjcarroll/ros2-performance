@@ -12,11 +12,13 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(irobot_events_executor REQUIRED)
 find_package(performance_metrics REQUIRED)
 find_package(performance_test_msgs REQUIRED)
 
 set(LIBRARY_DEPENDENCIES
   rclcpp
+  irobot_events_executor
   performance_metrics
   performance_test_msgs
 )
