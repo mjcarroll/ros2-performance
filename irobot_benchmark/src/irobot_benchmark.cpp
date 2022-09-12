@@ -136,7 +136,7 @@ int main(int argc, char ** argv)
   ros2_system->add_nodes(nodes_vec);
 
   // now the system is complete and we can make it spin for the requested duration
-  bool wait_for_discovery = true;
+  bool wait_for_discovery = false;
   ros2_system->spin(
     std::chrono::seconds(options.duration_sec),
     wait_for_discovery,
